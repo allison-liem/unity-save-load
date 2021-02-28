@@ -14,7 +14,7 @@ public class SaveUtils
     public static string SAVE_OBJECTS_PATH = Application.dataPath + "/objects.json";
     public static string SAVE_SARA_PATH = Application.dataPath + "/sara.json";
 
-    private static JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+    private static JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.None };
 
     private static Dictionary<string, GameObject> LoadPrefabs(string prefabsPath)
     {
